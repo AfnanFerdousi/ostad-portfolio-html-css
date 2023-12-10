@@ -16,13 +16,14 @@ body{
 }
 .container{
     padding: 20px;
+    background-color: #f8fffb;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
-    background-color: #f6f6f6;
+    padding: 2% 20%;
+    background-color: #fbfffd;
     box-shadow: 5px 2px 30px 5px rgba(0, 0, 0, 0.2)
 }
 
@@ -39,12 +40,13 @@ nav{
     color:#A4B6AC;
 }
 
-/* banner css */
+/* banner css start*/
 .banner{
     display: grid;
     grid-template-columns: 9fr 3fr;
     align-items: center;
     height: 95vh;
+    padding: 0% 20%
 }
 
 .intro{
@@ -73,3 +75,29 @@ nav{
     transform: scale(1.1);
     transition: .3s;
 }
+/* banner css end*/
+
+/* about css start */
+.about{
+      display: grid;
+    grid-template-columns: 9fr 3fr;
+    align-items: center;
+     padding: 0% 20%
+}
+.about-img img{
+    border-radius: 50%;
+    height: 550px;
+    width: 550px;
+}
+.about-content h3{
+    font-size: 30px;
+    font-weight: 500;
+    color: #2f485e;
+    margin-bottom: 15px;
+}
+.about-content p{
+    font-size: 18px;
+    border-left: 2px solid #A4B6AC;
+    padding-left: 15px;
+}
+/* about css end */
