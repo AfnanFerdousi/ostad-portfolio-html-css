@@ -1,65 +1,65 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+    font-family: "Roboto", sans-serif;
 }
-.container{
+.container {
     padding: 20px;
     background-color: #f8fffb;
 }
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2% 20%;
     background-color: #fbfffd;
-    box-shadow: 5px 2px 30px 5px rgba(0, 0, 0, 0.2)
+    box-shadow: 5px 2px 30px 5px rgba(0, 0, 0, 0.2);
 }
 
-.nav-links ul{
+.nav-links ul {
     display: flex;
     align-items: center;
     column-gap: 15px;
 }
-.nav-links ul li a{
-    color:#2f485e;
+.nav-links ul li a {
+    color: #2f485e;
     font-weight: 500;
 }
-.nav-links ul li a:hover{
-    color:#A4B6AC;
+.nav-links ul li a:hover {
+    color: #a4b6ac;
 }
 
 /* banner css start*/
-.banner{
+.banner {
     display: grid;
     grid-template-columns: 9fr 3fr;
     align-items: center;
     height: 95vh;
-    padding: 0% 20%
+    padding: 0% 20%;
 }
 
-.intro{
+.intro {
     font-weight: 400;
     font-size: 40px;
     color: #2f485e;
 }
-.name{
+.name {
     font-weight: 700;
-    font-size: 60px;   
-    color: #A4B6AC;
+    font-size: 60px;
+    color: #a4b6ac;
 }
-.resume{
+.resume {
     padding: 15px 25px;
     border-radius: 15px;
     border: none;
@@ -69,35 +69,35 @@ nav{
     font-size: 16px;
     margin-top: 30px;
 }
-.resume:hover{
-    background-color: #A4B6AC;
+.resume:hover {
+    background-color: #a4b6ac;
     cursor: pointer;
     transform: scale(1.1);
-    transition: .3s;
+    transition: 0.3s;
 }
 /* banner css end*/
 
 /* about css start */
-.about{
-      display: grid;
+.about {
+    display: grid;
     grid-template-columns: 9fr 3fr;
     align-items: center;
-     padding: 0% 20%
+    padding: 0% 20%;
 }
-.about-img img{
+.about-img img {
     border-radius: 50%;
     height: 550px;
     width: 550px;
 }
-.about-content h3{
+.about-content h3 {
     font-size: 30px;
     font-weight: 500;
     color: #2f485e;
     margin-bottom: 15px;
 }
-.about-content p{
+.about-content p {
     font-size: 18px;
-    border-left: 2px solid #A4B6AC;
+    border-left: 2px solid #a4b6ac;
     padding-left: 15px;
 }
 /* about css end */
