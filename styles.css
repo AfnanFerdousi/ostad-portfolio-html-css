@@ -101,3 +101,93 @@ nav {
     padding-left: 15px;
 }
 /* about css end */
+
+.technology{
+    padding: 0% 20%;
+}
+.technology h2{
+   font-size: 50px;
+    font-weight: 500;
+    color: #2f485e;
+    text-align: center;
+    margin: 50px 0;
+}
+.techs{
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    column-gap: 20px;
+    row-gap: 30px;
+}
+.techs img{
+    width: 200px;
+    height: 100px;
+}
+.techs img:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: .3s;
+}
+
+
+.project{
+    padding: 0% 15%;
+    margin-bottom: 30px;
+}
+.project h2{
+     font-size: 50px;
+    font-weight: 500;
+    color: #2f485e;
+    text-align: center;
+    margin: 50px 0;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 4fr);
+    column-gap: 20px;
+    justify-content: center;
+}
+.card{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px #dbdbdb;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.card img{
+    width: 400px;
+    border-radius: 10px;
+}
+.card img:hover{
+    transform: scale(1.01);
+    transition: .3s;
+}
+.card h3{
+    margin: 15px 0;
+    color: #2f485e;
+    font-weight: 500;
+    font-size: 20px
+}
+.card p{
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #2f485e;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.icons a{
+    color: #fff;
+    background-color: #2f485e;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 50%
+
+}
+.icons a:hover{
+    background-color: #a4b6ac;
+    transition: .2s;
+}
