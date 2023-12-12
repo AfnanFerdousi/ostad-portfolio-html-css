@@ -16,7 +16,6 @@ body {
 }
 .container {
     padding: 20px;
-    background-color: #f8fffb;
 }
 nav {
     display: flex;
@@ -25,6 +24,8 @@ nav {
     padding: 2% 20%;
     background-color: #fbfffd;
     box-shadow: 5px 2px 30px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
 }
 
 .nav-links ul {
@@ -48,7 +49,22 @@ nav {
     height: 95vh;
     padding: 0% 20%;
 }
-
+.banner h3{
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #a4b6ac;
+    display: inline;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.banner p{
+    margin: 15px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #2f485e;
+}
 .intro {
     font-weight: 400;
     font-size: 40px;
@@ -79,10 +95,14 @@ nav {
 
 /* about css start */
 .about {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 2px 2px 25px 2px #ddd;
+    background-color: #dfdfdf;
     display: grid;
-    grid-template-columns: 9fr 3fr;
+    grid-template-columns: 7fr 5fr;
     align-items: center;
-    padding: 0% 20%;
+    padding: 1% 20%;
 }
 .about-img img {
     border-radius: 50%;
@@ -95,58 +115,60 @@ nav {
     color: #2f485e;
     margin-bottom: 15px;
 }
-.about-content p {
+.about-text {
     font-size: 18px;
     border-left: 2px solid #a4b6ac;
     padding-left: 15px;
 }
+.about-text p{
+    margin-bottom: 15px;
+}
 /* about css end */
 
-.technology{
+.technology {
     padding: 0% 20%;
 }
-.technology h2{
-   font-size: 50px;
+.technology h2 {
+    font-size: 50px;
     font-weight: 500;
     color: #2f485e;
     text-align: center;
     margin: 50px 0;
 }
-.techs{
+.techs {
     display: grid;
     grid-template-columns: repeat(4, 3fr);
     column-gap: 20px;
     row-gap: 30px;
 }
-.techs img{
+.techs img {
     width: 200px;
     height: 100px;
 }
-.techs img:hover{
+.techs img:hover {
     cursor: pointer;
     transform: scale(0.9);
-    transition: .3s;
+    transition: 0.3s;
 }
 
-
-.project{
+.project {
     padding: 0% 15%;
     margin-bottom: 30px;
 }
-.project h2{
-     font-size: 50px;
+.project h2 {
+    font-size: 50px;
     font-weight: 500;
     color: #2f485e;
     text-align: center;
     margin: 50px 0;
 }
-.cards{
+.cards {
     display: grid;
     grid-template-columns: repeat(3, 4fr);
     column-gap: 20px;
     justify-content: center;
 }
-.card{
+.card {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     box-shadow: 2px 2px 5px 2px #dbdbdb;
@@ -154,40 +176,101 @@ nav {
     flex-direction: column;
     padding: 15px;
 }
-.card img{
+.card img {
     width: 400px;
     border-radius: 10px;
 }
-.card img:hover{
+.card img:hover {
     transform: scale(1.01);
-    transition: .3s;
+    transition: 0.3s;
 }
-.card h3{
+.card h3 {
     margin: 15px 0;
     color: #2f485e;
     font-weight: 500;
-    font-size: 20px
+    font-size: 20px;
 }
-.card p{
+.card p {
     font-weight: 400;
     margin-bottom: 30px;
     color: #2f485e;
 }
-.icons{
+.icons {
     display: flex;
     align-items: center;
     column-gap: 8px;
 }
-.icons a{
+.icons a {
     color: #fff;
     background-color: #2f485e;
     font-size: 16px;
     font-weight: 600;
     padding: 10px;
-    border-radius: 50%
+    border-radius: 50%;
+}
+.icons a:hover {
+    background-color: #a4b6ac;
+    transition: 0.2s;
+}
+.contact-sec{
+    background-color: #dfdfdf;
+     box-shadow: 2px 2px 25px 2px #ddd;
+         margin-bottom: 50px;
+    margin-top: 50px;
+    padding: 2% 0%;
+}
+.contact{
+     background-color: #fefefe;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    border-radius: 10px;
 
 }
-.icons a:hover{
+
+.contact h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #2f485e;
+    text-align: center;
+    margin: 50px 0;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 10px;
+}
+.fields{
+        padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid #2f485e;
+}
+.contact-form button{
+     padding: 15px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: #2f485e;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.contact-form button:hover {
     background-color: #a4b6ac;
-    transition: .2s;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
+footer{
+        padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2f485e;
 }
