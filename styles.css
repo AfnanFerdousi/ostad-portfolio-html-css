@@ -14,9 +14,6 @@ ul {
 body {
     font-family: "Roboto", sans-serif;
 }
-.container {
-    padding: 20px;
-}
 nav {
     display: flex;
     justify-content: space-between;
@@ -176,10 +173,6 @@ nav {
     flex-direction: column;
     padding: 15px;
 }
-.card img {
-    width: 400px;
-    border-radius: 10px;
-}
 .card img:hover {
     transform: scale(1.01);
     transition: 0.3s;
@@ -245,12 +238,12 @@ nav {
     row-gap: 10px;
 }
 .fields{
-        padding: 15px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
     border: 2px solid #2f485e;
 }
 .contact-form button{
-     padding: 15px 25px;
+    padding: 15px 25px;
     border-radius: 15px;
     border: none;
     background-color: #2f485e;
@@ -267,7 +260,7 @@ nav {
 }
 
 footer{
-        padding: 20px;
+    padding: 20px;
     text-align: center;
     border-top: 1px solid #ddd;
     font-size: 20px;
